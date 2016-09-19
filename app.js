@@ -15,11 +15,11 @@ function LunchCheckController($scope) {
     var arrayOfStrings = "";
 
     if ($scope.item === ""){
-      $scope.itemState = "Empty!";
+      $scope.itemState = "Please enter data first!";
     }else{
       arrayOfStrings = $scope.item.split(seperator);
       $scope.strLength = arrayOfStrings.length;
-      console.log($scope.strLength); //debugger
+      //console.log($scope.strLength); //debugger
     }
 
     if($scope.strLength >= 1 && $scope.strLength <= 3) {
